@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/04/21/hello-world/"/>
+  <link rel="canonical" href="http://example.com/2021/06/25/常用命令/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,21 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hello World - Mr.XuBlog</title>
-  <meta name="keywords" content="XuBlog">
+  <title>Mybatis常用命令 - Mr.XuBlog</title>
+  <meta name="keywords" content="mybatis常用命令,XuBlog">
   <meta desc name="description" content="log - John Doe - Mr.XuBlog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/04/21/hello-world/">
+<meta property="og:title" content="Mybatis常用命令">
+<meta property="og:url" content="http://example.com/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 <meta property="og:site_name" content="Mr.XuBlog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="&#x3D;&#x3D;关键字不区分大小写&#x3D;&#x3D; 表重命名表 rename table 旧表名 to 新表名;   复制表  create table 新表名 like 源表;  1特点:表结构一致(包含约束），但不复制数据   create table 新表名 select * from 源表  1特点:表结构一致(不包含约束），但可以复制数据  删除表 1drop table">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-04-21T03:10:45.846Z">
-<meta property="article:modified_time" content="2023-04-13T02:12:34.304Z">
+<meta property="article:published_time" content="2021-06-25T14:58:54.000Z">
+<meta property="article:modified_time" content="2023-04-14T01:42:44.823Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="XuBlog">
+<meta property="article:tag" content="mybatis常用命令">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2443,7 +2443,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/21/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/常用命令/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Mr.XuBlog">
   </span>
@@ -2464,7 +2464,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hello World
+        Mybatis常用命令
       </h1>
       <div class='new-meta-box'>
         
@@ -2486,10 +2486,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-21T11:10:45+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-06-25T22:58:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 21, 2023</p>
+    <p>发布于：Jun 25, 2021</p>
   </a>
 </div>
 
@@ -2512,19 +2512,174 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <p>&#x3D;&#x3D;关键字不区分大小写&#x3D;&#x3D;</p>
+<h2 id="表"><a href="#表" class="headerlink" title="表"></a>表</h2><p><strong>重命名表</strong></p>
+<p><strong>rename</strong> <strong>table</strong> <strong>旧表名</strong> <strong>to</strong> <strong>新表名</strong>;  </p>
+<p><strong>复制表</strong></p>
+<ul>
+<li><strong>create table</strong> <strong>新表名</strong> <strong>like</strong> <strong>源表</strong>;</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">特点:表结构一致(包含约束），但不复制数据</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>create table</strong> <strong>新表名</strong> <strong>select * from</strong> <strong>源表</strong></li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">特点:表结构一致(不包含约束），但可以复制数据</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p><strong>删除表</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table 表名</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="字段"><a href="#字段" class="headerlink" title="字段"></a>字段</h2><p><strong>添加字段</strong> </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名 add 字段名 数据类型  [ first | after 字段名 ];</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><strong>修改字段类型</strong> </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名  modify 字段名 数据类型 [约束] [字段位置];</span><br></pre></td></tr></table></figure>
+
+<p><strong>改变字段名</strong> </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名  change 字段名  新字段名  数据类型 [字段位置];</span><br></pre></td></tr></table></figure>
+
+<p><strong>字段设置默认值</strong> </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">设置默认值的命令如下所示。</span><br><span class="line">	ALTER TABLE 表名 ALTER 字段名 SET default 默认值;</span><br><span class="line">    删除默认值的命令如下所示。</span><br><span class="line">	ALTER TABLE 表名 ALTER 字段名 DROP default;</span><br></pre></td></tr></table></figure>
+
+<p><strong>删除字段</strong> </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名 DROP 字段名 | 约束;</span><br></pre></td></tr></table></figure>
+
+<h2 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h2><table>
+<thead>
+<tr>
+<th><strong>NOT NULL</strong></th>
+<th><strong>约束字段的值不能为空</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>DEFAULT</strong></td>
+<td><strong>设置字段的默认值</strong></td>
+</tr>
+<tr>
+<td><strong>UNIQUE KEY(UK)</strong></td>
+<td><strong>约束字段的值是唯一</strong></td>
+</tr>
+<tr>
+<td><strong>PRIMARY KEY(PK)</strong></td>
+<td><strong>约束字段为表的主键，可以作为该表记录的唯一标识</strong></td>
+</tr>
+<tr>
+<td><strong>AUTO_INCREMENT</strong></td>
+<td><strong>约束字段的值为自动增加</strong></td>
+</tr>
+</tbody></table>
+<p><strong>设置为复合主键</strong> </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE 表名( id int,name char(20),</span><br><span class="line">				PRIMARY KEY(id,name));</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>或者创建表以后添加复合主键</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 drop primary key; <span class="params">#</span>先删除主键，否则报错</span><br><span class="line">alter table 表名 add primary key (字段1,字段2,字段3);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Unique-Key"><a href="#Unique-Key" class="headerlink" title="Unique Key"></a><strong>Unique Key</strong></h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">要求该列值唯一，允许为空，唯一约束可以确保一列或者几列不出现重复值</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">创建表的时候，使用 unique 添加唯一约束。</span><br><span class="line">	CREATE TABLE  &lt;表名&gt;  (字段 数据类型  UNIQUE ，……);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>添加唯一约束 ALTER TABLE  &lt;表名&gt; ADD unique(字段名);</span><br><span class="line"></span><br><span class="line"><span class="params">#</span>删除约束	 ALTER TABLE &lt;表名&gt; DROP INDEX 约束字段;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>主键与唯一约束的区别：</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UNIQUE 和 PRIMARY KEY 约束均为列或列集合提供了数据唯一性的保证。</span><br><span class="line">PRIMARY KEY 约束不允许为NULL值，**Unique键允许NULL值，</span><br><span class="line">每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束</span><br></pre></td></tr></table></figure>
+
+<p><strong>AUTO_INCREMENT</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">被指定为自增长的字段必须是key ,比如primary key</span><br><span class="line">被指定为自增长的字段默认从1开始，默认步长为1</span><br><span class="line">被指定为自增长的字段在插入数据时可以指定该字段值为null值</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">如果把一个NULL插入到一个AUTO<span class="built_in">_</span>INCREMENT数据列里去，MySQL将自动生成下一个序列编号，编号从1开始，并以1为基数递增。</span><br><span class="line"></span><br><span class="line">当插入记录时，如果为AUTO<span class="built_in">_</span>INCREMENT字段明确指定了一个数值，则会出现两种情况：一种是如果插入的值与已有的编号重复，则会出现出错信息，因为AUTO<span class="built_in">_</span>INCREMENT数据列的值必须是唯一的；另一种是如果插入的值大于已编号的值，则会把该值插入到数据列中，下一个编号将从这个新值开始递增</span><br></pre></td></tr></table></figure>
+
+
+
+<p>&#x3D;&#x3D;<strong>被DELETE语句删除的id值，除非在SQL中将id重新插入，否则前面空余的id不会复用。</strong>&#x3D;&#x3D;</p>
+<h2 id="ORDER-BY"><a href="#ORDER-BY" class="headerlink" title="ORDER BY"></a>ORDER BY</h2><p><strong>如果按多个字段进行排序，先进行第一个字段的排序，然后在结果集里面再进行第二个字段的排序，以此类推</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名 ORDER BY 字段 [ASC | desc],字段 [ASC | desc];ASC升序默认,可以不写</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="GROUP-BY"><a href="#GROUP-BY" class="headerlink" title="GROUP BY"></a>GROUP BY</h2><p><strong>GROUP BY对查询结果分组是将查询结果按照1个或多个字段进行分组，字段值相同的为一组，GROUP BY可以用于单个字段和多个字段。</strong>(取第一个的值)</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user GROUP BY sex;</span><br></pre></td></tr></table></figure>
+
+<p><strong>分组是为了统计数据；</strong></p>
+<p><strong>按组统计：按分组字段进行数据统计</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">函数</span><br><span class="line">Count（）：统计分组后的数据：每一组有多少值</span><br><span class="line">Max():统计每组中最大的值</span><br><span class="line">Min():统计最小值</span><br><span class="line">Avg():统计平均值</span><br><span class="line">Sum():统计和</span><br><span class="line"></span><br><span class="line">也可以直接对字段操作</span><br><span class="line"></span><br><span class="line"> select count(id)  from users;</span><br><span class="line"> select Max(id)  from users;</span><br><span class="line"> select min(id)  from users;</span><br><span class="line"> select avg(id)  from users;</span><br><span class="line"> select sum(id)  from users;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">group<span class="built_in">_</span>concat（字段名）可以作为一个输出字段来使用，表示分组之后，根据分组结果，使用group<span class="built_in">_</span>concat( )来放置每一组的某字段的值的集合。</span><br><span class="line">SELECT column1,group<span class="built_in">_</span>concat(column) FROM user GROUP BY column1;</span><br></pre></td></tr></table></figure>
+
+<h2 id="HAVING"><a href="#HAVING" class="headerlink" title="HAVING"></a>HAVING</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对分组统计再加限制条件:在GROUP BY后面</span><br></pre></td></tr></table></figure>
+
+<p>&#x3D;&#x3D;where执行顺序大于聚合函数&#x3D;&#x3D;</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">where 在分组前执行，条件中不能包含聚组函数</span><br><span class="line">having 子句的作用是筛选满足条件的组，即在分组之后过滤数据，条件中经常包含聚组函数，使用having 条件显示特定的组，也可以使用多个分组标准进行分组。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="LIMIT"></a>LIMIT</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LIMIT 接受一个或两个数字参数，参数必须是一个整数常量</span><br></pre></td></tr></table></figure>
+
+<p><strong>如果只给定一个参数，则它表示返回最大的记录行数目</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>检索前6行记录</span><br><span class="line">SELECT * FROM user LIMIT 6;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果给定两个参数，则第一个参数指定第一个返回记录行的偏移量，</span><br><span class="line">第二个参数指定返回记录行的最大数目，初始记录行的偏移量是0（而不是1）。</span><br><span class="line"><span class="params">#</span>从第2条数据开始，检索出5条数据</span><br><span class="line">SELECT * FROM user LIMIT 2,5;</span><br></pre></td></tr></table></figure>
+
+<p>SELECT  查询内容  7</p>
+<p>FROM    表名      1</p>
+<p>WHERE   条件     2</p>
+<p>GROUP BY 字段名   3</p>
+<p>HAVING   表达式     4</p>
+<p>ORDER BY 字段名   5</p>
+<p>LIMIT    记录数        6</p>
+<h2 id="条件查询过滤"><a href="#条件查询过滤" class="headerlink" title="条件查询过滤"></a>条件查询过滤</h2><p><strong>条件查询过滤关键字为AND、OR、IN、NOT IN、IS NULL、IS NOT NULL、BETWEEN AND</strong></p>
+<p><strong>AND（与）</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE  age = 20 and name=&#x27;kevin&#x27;;</span><br><span class="line">都得满足</span><br></pre></td></tr></table></figure>
+
+<p><strong>OR（或）</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE  age = 20 or name=&#x27;kevin&#x27;;</span><br><span class="line">满足一个就行</span><br></pre></td></tr></table></figure>
+
+<p><strong>IN（在范围内）</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE id in (3,5,7);</span><br><span class="line">id=3/id=5/id=7</span><br></pre></td></tr></table></figure>
+
+<p><strong>NOT IN（不在范围内）</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE  id not in(3,5,7);</span><br><span class="line">id!=3/id!=5/id=!7</span><br></pre></td></tr></table></figure>
+
+<p><strong>IS（为空）</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE  name is null;</span><br></pre></td></tr></table></figure>
+
+<p><strong>is not null (不为空)</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE  name is null;</span><br></pre></td></tr></table></figure>
+
+<p><strong>BETWEEN AND（在……区间）</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user WHERE age between 10 and 20;</span><br><span class="line">[10,20]</span><br></pre></td></tr></table></figure>
+
+<p><strong>模糊查询过滤</strong>  <strong>like</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM user name like &#x27;<span class="comment">%明%&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>DISTINCT：去除重复的列值。</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT distinct age FROM user;</span><br></pre></td></tr></table></figure>
+
+<p><strong>AS：&#x3D;&#x3D;可以设置列&#x2F;表的别名，也可以省略AS来设置关键字&#x3D;&#x3D;。</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT name as 姓名 FROM user;</span><br><span class="line">或者</span><br><span class="line">SELECT name  姓名 FROM user;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">检索年龄比罗九大的所有人员信息</span><br><span class="line">select * from user where age&gt;=(select age from user where name=&#x27;罗九&#x27;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">检索和张三及李四同班的信息。</span><br><span class="line">select * from user where class in </span><br><span class="line">(select class from user where name=&#x27;张三&#x27; or name=&#x27;李四&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>any</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">any运算符通常与比较运算符一起使用，通过比较运算符将一个表达式的值与子查询返回的一列值逐一进行比较，若某次的比较结果为true,则整个表达式的值为true,否则为false</span><br></pre></td></tr></table></figure>
+
+<p><strong>当比较运算符为大于号时,’表达式&gt;any(子查询)’表示至少大于子查询结果集中的一个值&#x3D;&#x3D;（或者说大于结果集中的最小值）&#x3D;&#x3D;</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">检索年龄大于智能2班最小人员的信息。</span><br><span class="line"></span><br><span class="line">SELECT name,class,age FROM user WHERE age &gt; any(SELECT age FROM user WHERE class=&#x27;智能2班&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>all</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">all运算符通常与比较运算符一起使用，通过比较运算符将一个表达式的值与子查询返回的一列值逐一进行比较，若每次的比较结果为true,则整个表达式的值为true,否则为false</span><br><span class="line">检索年龄大于智能2班最大人员的信息</span><br><span class="line">SELECT name,class,age FROM user WHERE age &gt; all(SELECT age FROM user WHERE class=&#x27;智能2班&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>当比较运算符为大于号时,’表达式</strong> <strong>&gt;all(子查询)’表示大于子查询结果集中的任何一个值 （&#x3D;&#x3D;或者说大于结果集中的最大值&#x3D;&#x3D;）</strong></p>
+<p><strong>exists</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">找出user表中和user1表重名的名字。(用多表查询更好)</span><br><span class="line">select name from user where exists</span><br><span class="line">    (select name from user1 where name=user.name);</span><br></pre></td></tr></table></figure>
+
 
   </div>
   
@@ -2549,10 +2704,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-13T10:12:34+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-14T09:42:44+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Apr 13, 2023</p>
+    <p>更新于：Apr 14, 2023</p>
   </a>
 </div>
 
@@ -2560,6 +2715,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/mybatis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>mybatis常用命令</p></a></div>
+  <span hidden itemprop="keywords">mybatis常用命令</span>
+  
+
 
         
       
@@ -2571,7 +2733,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/04/21/hello-world/&title=Hello World - Mr.XuBlog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/&title=Mybatis常用命令 - Mr.XuBlog&summary="
           
           >
           
@@ -2583,7 +2745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/04/21/hello-world/&title=Hello World - Mr.XuBlog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/&title=Mybatis常用命令 - Mr.XuBlog&summary="
           
           >
           
@@ -2595,7 +2757,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/04/21/hello-world/&title=Hello World - Mr.XuBlog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/&title=Mybatis常用命令 - Mr.XuBlog&summary="
           
           >
           
@@ -2628,13 +2790,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-      
-        <a class='next' href='/2023/04/13/python%E7%AE%97%E6%B3%95/'>
-          <p class='title'>python基础算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>斐波那契数列
-定义   F(0)&#x3D;0，F(1)&#x3D;1, F(n)&#x3D;F(n - 1)+F(n - 2)（n ≥ 2，n ∈ N*）
+        <a class='prev' href='/2021/06/25/%E7%B1%BB%E5%9E%8B/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Mybatis数据类型</p>
+          <p class='content'>数值型 :  整数类型,小数类型
+字符串型
+日期类型
+符合类型  eunm类型,set类型
+二进制类型
 
-12345678910111213...</p>
+数值类型MySQL数值类型1**MySQL主要支持**5种整数类型：**tinyint[...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/06/25/json%E4%B9%B1%E7%A0%81/'>
+          <p class='title'>json乱码<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>解决json 乱码配置1234567891011121314&lt;mvc:annotation-driven&gt;        &lt;mvc:message-converters reg...</p>
         </a>
       
     </div>
@@ -2653,7 +2823,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/04/21/hello-world/#comments">
+      <meta itemprop="discussionUrl" content="/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2695,7 +2865,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8"><span class="toc-text">表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5"><span class="toc-text">字段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A6%E6%9D%9F"><span class="toc-text">约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unique-Key"><span class="toc-text">Unique Key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ORDER-BY"><span class="toc-text">ORDER BY</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GROUP-BY"><span class="toc-text">GROUP BY</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HAVING"><span class="toc-text">HAVING</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LIMIT"><span class="toc-text">LIMIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%E8%BF%87%E6%BB%A4"><span class="toc-text">条件查询过滤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-text">子查询</span></a></li></ol>
   </div>
 </section>
 
@@ -3189,7 +3359,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/04/21/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/04/21/hello-world/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/04/21/hello-world/","wordCount":0,"datePublished":"2023-04-21T03:10:45.846Z","dateModified":"2023-04-13T02:12:34.304Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/06/25/常用命令/","name":"Mybatis常用命令"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Mybatis常用命令","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/","wordCount":0,"datePublished":"2021-06-25T14:58:54.000Z","dateModified":"2023-04-14T01:42:44.823Z","keywords":"mybatis常用命令","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

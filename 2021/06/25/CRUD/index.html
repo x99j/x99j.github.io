@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/04/21/hello-world/"/>
+  <link rel="canonical" href="http://example.com/2021/06/25/crud/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,21 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hello World - Mr.XuBlog</title>
-  <meta name="keywords" content="XuBlog">
+  <title>CRUD - Mr.XuBlog</title>
+  <meta name="keywords" content="mysql基础SQL,XuBlog">
   <meta desc name="description" content="log - John Doe - Mr.XuBlog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/04/21/hello-world/">
+<meta property="og:title" content="CRUD">
+<meta property="og:url" content="http://example.com/2021/06/25/CRUD/">
 <meta property="og:site_name" content="Mr.XuBlog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="INSERT 插入一条数据  1INSERT INTO 表名(字段名，字段名) VALUES(值，值);   省略 表字段名，值按字段的顺序插入，  1INSERT INTO 表名  VALUES(值，值);&#x2F;&#x2F;全部字段   插入多条数据  1INSERT INTO 表名 VALUES(值，值),(值，值),(值，值);  1insert into user(name,sex) values(&amp;#">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-04-21T03:10:45.846Z">
-<meta property="article:modified_time" content="2023-04-13T02:12:34.304Z">
+<meta property="article:published_time" content="2021-06-25T04:16:15.000Z">
+<meta property="article:modified_time" content="2023-04-14T01:40:13.896Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="XuBlog">
+<meta property="article:tag" content="mysql基础SQL">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2443,7 +2443,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/21/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/CRUD/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Mr.XuBlog">
   </span>
@@ -2464,7 +2464,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hello World
+        CRUD
       </h1>
       <div class='new-meta-box'>
         
@@ -2486,10 +2486,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-21T11:10:45+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-06-25T12:16:15+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 21, 2023</p>
+    <p>发布于：Jun 25, 2021</p>
   </a>
 </div>
 
@@ -2512,19 +2512,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <h2 id="INSERT"><a href="#INSERT" class="headerlink" title="INSERT"></a>INSERT</h2><ul>
+<li>插入一条数据</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名(字段名，字段名) VALUES(值，值);</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ul>
+<li>省略 表字段名，值按字段的顺序插入，</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名  VALUES(值，值);//全部字段</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<ul>
+<li>插入多条数据</li>
+</ul>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名 VALUES(值，值),(值，值),(值，值);</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into user(name,sex) values(&#x27;test&#x27;,default);//默认值</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+
+<h2 id="SELECT"><a href="#SELECT" class="headerlink" title="SELECT"></a>SELECT</h2><p>全部字段</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名; </span><br></pre></td></tr></table></figure>
+
+<p>指定字段</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT 字段1,字段2  FROM 表名;</span><br></pre></td></tr></table></figure>
+
+<p>按条件查询</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名 WHERE 条件;</span><br><span class="line">SELECT * FROM 表名 WHERE 条件 [ or|and 条件] ;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="UPDATE"><a href="#UPDATE" class="headerlink" title="UPDATE"></a>UPDATE</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE 表名 SET 字段=值,字段=值 WHERE 条件;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM 表名 WHERE 条件;</span><br></pre></td></tr></table></figure>
+
+<p>清空数据   <strong>truncate table 表名;</strong> </p>
+<p>删除表    <strong>drop</strong>  <strong>table</strong> <strong>表名;</strong></p>
+<p><strong>delete 和 truncate 仅仅删除表数据，drop 连表数据和表结构一起删除</strong></p>
 
   </div>
   
@@ -2549,10 +2575,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-13T10:12:34+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-14T09:40:13+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Apr 13, 2023</p>
+    <p>更新于：Apr 14, 2023</p>
   </a>
 </div>
 
@@ -2560,6 +2586,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/mysql%E5%9F%BA%E7%A1%80SQL/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>mysql基础SQL</p></a></div>
+  <span hidden itemprop="keywords">mysql基础SQL</span>
+  
+
 
         
       
@@ -2571,7 +2604,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/04/21/hello-world/&title=Hello World - Mr.XuBlog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/06/25/CRUD/&title=CRUD - Mr.XuBlog&summary="
           
           >
           
@@ -2583,7 +2616,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/04/21/hello-world/&title=Hello World - Mr.XuBlog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/06/25/CRUD/&title=CRUD - Mr.XuBlog&summary="
           
           >
           
@@ -2595,7 +2628,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/04/21/hello-world/&title=Hello World - Mr.XuBlog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/06/25/CRUD/&title=CRUD - Mr.XuBlog&summary="
           
           >
           
@@ -2628,13 +2661,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/2021/06/25/MyiSAM-InnoDB/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>InnoDB与MyISAM引擎的区别</p>
+          <p class='content'>Mybatis简介是关系型数据库管理系统
+数据库类型有 层次式数据库、网络式数据库、关系数据库和面向对象的数据库
+是指通过关系模型来组织数据的数据库。关系数据库把世界看成由实体和联系组成。
+(一...</p>
+        </a>
       
-        <a class='next' href='/2023/04/13/python%E7%AE%97%E6%B3%95/'>
-          <p class='title'>python基础算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>斐波那契数列
-定义   F(0)&#x3D;0，F(1)&#x3D;1, F(n)&#x3D;F(n - 1)+F(n - 2)（n ≥ 2，n ∈ N*）
-
-12345678910111213...</p>
+      
+        <a class='next' href='/2021/04/25/interface/'>
+          <p class='title'>网络编程<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>12TCP Transmission Control Protocol   传输控制协议 数据格式字节流 UDP User Datagram Protocol 用户数据图协议 特点：无连接、不可...</p>
         </a>
       
     </div>
@@ -2653,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/04/21/hello-world/#comments">
+      <meta itemprop="discussionUrl" content="/2021/06/25/CRUD/#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2695,7 +2733,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#INSERT"><span class="toc-text">INSERT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SELECT"><span class="toc-text">SELECT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UPDATE"><span class="toc-text">UPDATE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DELETE"><span class="toc-text">DELETE</span></a></li></ol>
   </div>
 </section>
 
@@ -3189,7 +3227,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/04/21/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/04/21/hello-world/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/04/21/hello-world/","wordCount":0,"datePublished":"2023-04-21T03:10:45.846Z","dateModified":"2023-04-13T02:12:34.304Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/06/25/CRUD/","name":"CRUD"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CRUD","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/06/25/CRUD/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/06/25/CRUD/","wordCount":0,"datePublished":"2021-06-25T04:16:15.000Z","dateModified":"2023-04-14T01:40:13.896Z","keywords":"mysql基础SQL","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
