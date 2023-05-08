@@ -25,7 +25,12 @@
   <!-- import head_begin begin -->
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
-  
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+<script defer src="/custom/darkmode.js"></script>
+<link rel="stylesheet" href="/custom/darkmode.css" type="text/css"/>
+<script>
+console.log(1111111) // 不推荐
+</script>
   <!-- Custom Files headBegin end-->
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -2112,7 +2117,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1682048199083),
+    lastupdate: new Date(1683533276088),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2628,13 +2633,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-      
-        <a class='next' href='/2023/04/13/python%E7%AE%97%E6%B3%95/'>
-          <p class='title'>python基础算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>斐波那契数列
-定义   F(0)&#x3D;0，F(1)&#x3D;1, F(n)&#x3D;F(n - 1)+F(n - 2)（n ≥ 2，n ∈ N*）
+        <a class='prev' href='/2023/04/23/jmeter/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>jmeter</p>
+          <p class='content'>配置项
+有重定向的请求，并且勾选了“Follow Redirects”，则主取样器为最后返回的URL请求，第一次URL和重定向返回的所有URL请求为子取样器
 
-12345678910111213...</p>
+
+第一次请求： GET http:...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/04/20/git/'>
+          <p class='title'>git<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>什么是版本控制版本迭代  new 版本  旧版本
+版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢...</p>
         </a>
       
     </div>

@@ -25,7 +25,12 @@
   <!-- import head_begin begin -->
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
-  
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+<script defer src="/custom/darkmode.js"></script>
+<link rel="stylesheet" href="/custom/darkmode.css" type="text/css"/>
+<script>
+console.log(1111111) // 不推荐
+</script>
   <!-- Custom Files headBegin end-->
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -2110,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1682048199083),
+    lastupdate: new Date(1683533276088),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2540,9 +2545,271 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/13/MySQL  SQL优化/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.XuBlog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.XuBlog">
+    <meta itemprop="description" content="log">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/06/13/MySQL%20%20SQL%E4%BC%98%E5%8C%96/"  itemprop="url">
+        MySQL优化
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        SQL查询优化博客
+建立索引
+
+where 及 order by ，group by 涉及的列上建立索引
+
+优化SQL语句
+
+explain（查询优化神器）用来查看SQL语句的执行结果
+1explain select *  from news
+
+任何地方都不要使用select * from t ，用具体的字段列表代替*
+
+全表扫描,(有 order by 需求时)速度会很慢
+
+
+limit ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-06-13T21:00:54+08:00">2023-06-13</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/06/13/MySQL%20%20SQL%E4%BC%98%E5%8C%96/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/28/selenium/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.XuBlog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.XuBlog">
+    <meta itemprop="description" content="log">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/04/28/selenium/"  itemprop="url">
+        selenium
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        前缀
+安装 selenium1pip install selenium
+
+添加环境变量
+Chrome 版本要与chromedriver.exe 驱动版本一致版本向下兼容  点击跳到ChromeDrive下载地址
+把 chromedriver.exe 的所在的目录文件夹位置添加到环境变量中或放到项目更目录中
+
+
+示例运行1234567891011121314151617def main(url...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-04-28T15:53:53+08:00">2023-04-28</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/04/28/selenium/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/23/jmeter/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.XuBlog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.XuBlog">
+    <meta itemprop="description" content="log">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/04/23/jmeter/"  itemprop="url">
+        jmeter
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        配置项
+有重定向的请求，并且勾选了“Follow Redirects”，则主取样器为最后返回的URL请求，第一次URL和重定向返回的所有URL请求为子取样器
+
+
+第一次请求： GET http://www.sina.com/ 重定向返回： Location:http://www.sina.com.cn/第二次请求： GET http://www.sina.com.cn/ 重定向返回： Loc...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-04-23T09:27:35+08:00">2023-04-23</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/04/23/jmeter/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2588,6 +2855,131 @@ Qu...
       
         <div>
           <a class='readmore' href='/2023/04/21/hello-world/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/20/git/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.XuBlog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.XuBlog">
+    <meta itemprop="description" content="log">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/04/20/git/"  itemprop="url">
+        git
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        什么是版本控制版本迭代  new 版本  旧版本
+版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。
+
+实现跨区域多人协同开发
+追踪和记载一个或者多个文件的历史记录
+组织和保护你的源代码和文档
+统计工作量
+并行开发、提高开发效率
+跟踪记录整个软件的开发过程
+减轻开发人员的...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-04-20T09:27:35+08:00">2023-04-20</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/04/20/git/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/18/allure/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Mr.XuBlog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Mr.XuBlog">
+    <meta itemprop="description" content="log">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/04/18/allure/"  itemprop="url">
+        Alluer
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Anaconda 安装
+[知乎][https://zhuanlan.zhihu.com/p/94744929] 能够把报下载道自己的site下
+配置
+pip 安装路径 加入到 sys.path 中
+
+修改site.py文件中的
+123ENABLE_USER_SITE = TRUEUSER_SITE = &quot;E:\Environment\python311\site-packages&...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-04-18T09:27:35+08:00">2023-04-18</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/04/18/allure/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2723,7 +3115,7 @@ YAML文档：
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/27/高级查询/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/15/redis/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Mr.XuBlog">
   </span>
@@ -2741,20 +3133,15 @@ YAML文档：
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/27/%E9%AB%98%E7%BA%A7%E6%9F%A5%E8%AF%A2/"  itemprop="url">
-        Mybatis高级查询
+      <a href="/2023/01/15/redis/"  itemprop="url">
+        redis
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        连接查询1在实际应用中,为了避免数据冗余,需要将一张大表划分成若干张小表，检索数据时，往往需要将若干张小表缝补成一张大表输出给用户，==在select语句的from子句中指定多个数据源（即表）==，即可实现从多张表中提取数据，多张表缝补成一个结果集时，只==要指定缝补条件==，改缝补条件称为连接条件
-
-指定连接条件的方法有二种
-内联查询两张表中的数据可能都会过滤掉数据
-
-第一种方法实在whe...
+        基础命令12345678910111213keys * 所有键type 键名del  键名..        可以同时删除多个键名    set  键名 值get  键名Map&lt;Obgect,Object&gt;  map = new hashMap();hset 变量名 键 值     h(hash)hget 变量名 键lpush 变量名 值      值可以是都个     l(li...
       
     
   </div>
@@ -2762,12 +3149,12 @@ YAML文档：
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2021-06-27T21:48:54+08:00">2021-06-27</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-01-15T21:58:54+08:00">2023-01-15</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/06/27/%E9%AB%98%E7%BA%A7%E6%9F%A5%E8%AF%A2/' itemprop="url">
+          <a class='readmore' href='/2023/01/15/redis/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2783,7 +3170,7 @@ YAML文档：
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/类型/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/10/linux/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Mr.XuBlog">
   </span>
@@ -2801,21 +3188,26 @@ YAML文档：
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/25/%E7%B1%BB%E5%9E%8B/"  itemprop="url">
-        Mybatis数据类型
+      <a href="/2023/01/10/linux/"  itemprop="url">
+        Linux
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        数值型 :  整数类型,小数类型
-字符串型
-日期类型
-符合类型  eunm类型,set类型
-二进制类型
+        1. 基础命连接
+1ssh -p 22 root@192.168.42.132
 
-数值类型MySQL数值类型1**MySQL主要支持**5种整数类型：**tinyint[&#x27;taɪni]极小的﹑smallint[smɔl]微小的﹑mediumint[&#x27;midiəm]中等的﹑int**和**bigint**,这些整数类型的取值范围依次递增，默认情况下既...
+
+
+
+
+
+1234/ 代表根目录. 当前目录.. 进入当前目录的上一级目录| 管道操作符
+
+2. 
+12345678910111213141516171819202122232425262728293031323334pwd 当前目录cd /    根目录    (tab补全,两下tab显示多的选择)touch...
       
     
   </div>
@@ -2823,327 +3215,12 @@ YAML文档：
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2021-06-25T23:58:54+08:00">2021-06-25</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-01-10T21:58:54+08:00">2023-01-10</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/06/25/%E7%B1%BB%E5%9E%8B/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/常用命令/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Mr.XuBlog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Mr.XuBlog">
-    <meta itemprop="description" content="log">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
-        Mybatis常用命令
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        &#x3D;&#x3D;关键字不区分大小写&#x3D;&#x3D;
-表重命名表
-rename table 旧表名 to 新表名;  
-复制表
-
-create table 新表名 like 源表;
-
-1特点:表结构一致(包含约束），但不复制数据
-
-
-create table 新表名 select * from 源表
-
-1特点:表结构一致(不包含约束），但可以复制数据
-
-删除表
-1drop ta...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-06-25T22:58:54+08:00">2021-06-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/06/25/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/json乱码/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Mr.XuBlog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Mr.XuBlog">
-    <meta itemprop="description" content="log">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/25/json%E4%B9%B1%E7%A0%81/"  itemprop="url">
-        json乱码
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        解决json 乱码配置1234567891011121314&lt;mvc:annotation-driven&gt;        &lt;mvc:message-converters register-defaults=&quot;true&quot;&gt;            &lt;bean class=&quot;org.springframework.http.convert...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-06-25T21:58:54+08:00">2021-06-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/06/25/json%E4%B9%B1%E7%A0%81/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/MyiSAM-InnoDB/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Mr.XuBlog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Mr.XuBlog">
-    <meta itemprop="description" content="log">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/25/MyiSAM-InnoDB/"  itemprop="url">
-        InnoDB与MyISAM引擎的区别
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Mybatis简介是关系型数据库管理系统
-数据库类型有 层次式数据库、网络式数据库、关系数据库和面向对象的数据库
-是指通过关系模型来组织数据的数据库。关系数据库把世界看成由实体和联系组成。
-(一对一,一对多,多对多)
-InnoDB与MyISAM引擎的区别1、&#x3D;&#x3D;MyISAM不支持事务&#x3D;&#x3D;，&#x3D;&#x3D;InnoDB是事务类型的存储引擎&#x3...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-06-25T21:00:54+08:00">2021-06-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/06/25/MyiSAM-InnoDB/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/CRUD/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Mr.XuBlog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Mr.XuBlog">
-    <meta itemprop="description" content="log">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/25/CRUD/"  itemprop="url">
-        CRUD
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        INSERT
-插入一条数据
-
-1INSERT INTO 表名(字段名，字段名) VALUES(值，值);
-
-
-省略 表字段名，值按字段的顺序插入，
-
-1INSERT INTO 表名  VALUES(值，值);//全部字段
-
-
-插入多条数据
-
-1INSERT INTO 表名 VALUES(值，值),(值，值),(值，值);
-
-1insert into user(name,sex) values...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-06-25T12:16:15+08:00">2021-06-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/06/25/CRUD/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/25/interface/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Mr.XuBlog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Mr.XuBlog">
-    <meta itemprop="description" content="log">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/04/25/interface/"  itemprop="url">
-        网络编程
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        12TCP Transmission Control Protocol   传输控制协议 数据格式字节流 UDP User Datagram Protocol 用户数据图协议 特点：无连接、不可靠、快速传输
-
-1.1、概述地球村：得以实现
-信件
-
-计算机：
-计算机网络是指将&#x3D;&#x3D;地理位置不同&#x3D;&#x3D;的具有独立功能的&#x3D;&#x3D;多台计算机及其外部设...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-04-25T11:16:15+08:00">2021-04-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/04/25/interface/' itemprop="url">
+          <a class='readmore' href='/2023/01/10/linux/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3164,7 +3241,7 @@ InnoDB与MyISAM引擎的区别1、&#x3D;&#x3D;MyISAM不支持事务&#x3D;&#x3D;�
       <div class="prev-next">
         
         <p class="current">
-          1 / 2
+          1 / 5
         </p>
         
           <a class="next" rel="next" href="/page/2/">
@@ -3275,7 +3352,7 @@ InnoDB与MyISAM引擎的区别1、&#x3D;&#x3D;MyISAM不支持事务&#x3D;&#x3D;�
 
 
     <div class='content'>
-      <a href="/tags/Mybatis%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 14px; color: #999">Mybatis数据类型</a> <a href="/tags/interface/" style="font-size: 14px; color: #999">interface</a> <a href="/tags/javaWeb/" style="font-size: 14px; color: #999">javaWeb</a> <a href="/tags/mybatis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" style="font-size: 14px; color: #999">mybatis常用命令</a> <a href="/tags/mysql%E5%9F%BA%E7%A1%80SQL/" style="font-size: 14px; color: #999">mysql基础SQL</a> <a href="/tags/mysql%E9%AB%98%E7%BA%A7%E6%9F%A5%E8%AF%A2/" style="font-size: 14px; color: #999">mysql高级查询</a> <a href="/tags/python%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">python基础</a> <a href="/tags/python%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">python基础算法</a> <a href="/tags/yaml%E4%B8%8EJson/" style="font-size: 14px; color: #999">yaml与Json</a> <a href="/tags/%E4%B9%B1%E7%A0%81/" style="font-size: 14px; color: #999">乱码</a> <a href="/tags/%E5%BC%95%E6%93%8E/" style="font-size: 14px; color: #999">引擎</a>
+      <a href="/tags/Alluer/" style="font-size: 14px; color: #999">Alluer</a> <a href="/tags/JDBC/" style="font-size: 14px; color: #999">JDBC</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/MySql/" style="font-size: 14px; color: #999">MySql</a> <a href="/tags/Mybatis-plus/" style="font-size: 14px; color: #999">Mybatis-plus</a> <a href="/tags/Mybatis-study/" style="font-size: 14px; color: #999">Mybatis-study</a> <a href="/tags/Mybatis%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 14px; color: #999">Mybatis数据类型</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/SpringBoot/" style="font-size: 24px; color: #555">SpringBoot</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/interface/" style="font-size: 14px; color: #999">interface</a> <a href="/tags/javaWeb/" style="font-size: 14px; color: #999">javaWeb</a> <a href="/tags/jmeter/" style="font-size: 14px; color: #999">jmeter</a> <a href="/tags/mybatis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" style="font-size: 14px; color: #999">mybatis常用命令</a> <a href="/tags/mysql%E5%9F%BA%E7%A1%80SQL/" style="font-size: 14px; color: #999">mysql基础SQL</a> <a href="/tags/mysql%E9%AB%98%E7%BA%A7%E6%9F%A5%E8%AF%A2/" style="font-size: 14px; color: #999">mysql高级查询</a> <a href="/tags/python%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">python基础</a> <a href="/tags/python%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">python基础算法</a> <a href="/tags/redis/" style="font-size: 17.33px; color: #828282">redis</a> <a href="/tags/selenium/" style="font-size: 14px; color: #999">selenium</a> <a href="/tags/yaml%E4%B8%8EJson/" style="font-size: 14px; color: #999">yaml与Json</a> <a href="/tags/%E4%B9%B1%E7%A0%81/" style="font-size: 14px; color: #999">乱码</a> <a href="/tags/%E5%BC%95%E6%93%8E/" style="font-size: 14px; color: #999">引擎</a>
     </div>
   </section>
 
