@@ -46,11 +46,11 @@ console.log(1111111) // 不推荐
 <meta property="og:title" content="activiti">
 <meta property="og:url" content="http://example.com/2023/01/10/activite/">
 <meta property="og:site_name" content="Mr.XuBlog">
-<meta property="og:description" content="部署时12&quot;code&quot;: &quot;200&quot;, &quot;message&quot;: &quot;部署成功，流程ID&#x3D;sj:1:400009&quot;  1 在 act_ge_bytearray 表中  id -1 记录 图片  id - 2 记录 xml 文件   2 在 act_re_deployment 表中 id - 3 记录 部署单元信息   3">
+<meta property="og:description" content="流程执行1517 ACT_GE_BYTEARRAY 1518-1519  ACT_RE_PROCDEF定义id kk:1:1520  ACT_HI_PROCINST 1521   流程实例id 其中还记录了开始用户的id  ACT_RU_IDENTITYLINK 身份连接 1522  类型为  starter 则记录开始流传的人 participant 则记录该执行的人 ACT_HI_IDENTI">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-01-10T01:27:35.000Z">
-<meta property="article:modified_time" content="2023-05-08T08:54:15.924Z">
+<meta property="article:modified_time" content="2023-05-25T08:20:38.048Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="activiti">
 <meta name="twitter:card" content="summary">
@@ -2117,7 +2117,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1683536537245),
+    lastupdate: new Date(1685003181310),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2517,119 +2517,51 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="部署时"><a href="#部署时" class="headerlink" title="部署时"></a>部署时</h1><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;code&quot;: &quot;200&quot;,</span><br><span class="line"> &quot;message&quot;: &quot;部署成功，流程ID=sj:1:400009&quot;</span><br></pre></td></tr></table></figure>
+    <h1 id="流程执行"><a href="#流程执行" class="headerlink" title="流程执行"></a>流程执行</h1><p><code>1517</code><img src="/2023/01/10/activite/image-20230525103343992.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525103343992.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525103343992"></p>
+<p>ACT_GE_BYTEARRAY <code>1518</code>-<code>1519</code></p>
+<p><img src="/2023/01/10/activite/image-20230525103409524.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525103409524.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525103409524"></p>
+<p>ACT_RE_PROCDEF定义id <code>kk:1:1520</code></p>
+<p><img src="/2023/01/10/activite/image-20230525103506124.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525103506124.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525103506124"></p>
+<p>ACT_HI_PROCINST <code>1521</code>   流程实例id</p>
+<p>其中还记录了开始用户的id</p>
+<p><img src="/2023/01/10/activite/image-20230525105817287.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525105817287.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525105817287"></p>
+<p>ACT_RU_IDENTITYLINK 身份连接 <code>1522</code>  类型为 </p>
+<p>starter 则记录开始流传的人</p>
+<p>participant 则记录该执行的人</p>
+<p>ACT_HI_IDENTITYLINK  并在这里记录起来</p>
+<p>把用户与流程实例关联</p>
+<p><img src="/2023/01/10/activite/image-20230525110122451.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525110122451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525110122451"></p>
+<p><img src="/2023/01/10/activite/image-20230525135506485.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525135506485.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525135506485"></p>
+<p>ACT_RU_EXECUTION 执行器记录执行的位置</p>
+<p><img src="/2023/01/10/activite/image-20230525113417838.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525113417838.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525113417838"></p>
+<p>ACT_HI_ACTINST  <code>1523 - 1524</code></p>
+<blockquote>
+<p>查询流程历史， 更具流程实例id，不能是流程定义id</p>
+<p>看下列注意</p>
+</blockquote>
+<p><img src="/2023/01/10/activite/image-20230525110636923.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525110636923.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525110636923"></p>
+<blockquote>
+<p>上一个任务结束自动开启下一个任务</p>
+<p>上一个任务的结束时间 &#x3D;&#x3D; 下一个任务的开始时间</p>
+</blockquote>
+<p>ACT_RU_TASK <code>1525</code></p>
+<p><img src="/2023/01/10/activite/image-20230525113936961.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525113936961.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525113936961"></p>
+<p>后面执行的流程记录会是 <code>1526</code></p>
+<p><img src="/2023/01/10/activite/image-20230525154818296.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525154818296.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525154818296"></p>
+<p><code>1527</code> 执行记录</p>
+<p><img src="/2023/01/10/activite/image-20230525155147377.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155147377.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155147377"></p>
+<p><code>1528</code> 任务及任务记录</p>
+<p><img src="/2023/01/10/activite/image-20230525155227563.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155227563.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155227563"></p>
+<p><img src="/2023/01/10/activite/image-20230525155301787.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155301787.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155301787"></p>
+<p><code>1529</code> 身份认证 和 记录历史记录 </p>
+<p><img src="/2023/01/10/activite/image-20230525155404743.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155404743.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155404743"></p>
+<p><img src="/2023/01/10/activite/image-20230525155432219.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155432219.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155432219"></p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>同一个流程部署一次但是开始了不同的流程实例<br>张三开始了一次<br>李四开始了一次</p>
+<p><img src="/2023/01/10/activite/image-20230525111623469.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525111623469.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525111623469"></p>
+<p><img src="/2023/01/10/activite/image-20230525111817801.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525111817801.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525111817801"></p>
+<p>如果根据流程定义id查询的话，就会一个流程的所有实例都查询出来</p>
+<h1 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> RuntimeService runtimeService;<span class="comment">// 开启流程</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> TaskService taskService; <span class="comment">// 待审核已审核</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> HistoryService historyService;<span class="comment">// 流转历史</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><blockquote>
-<p>在 act_ge_bytearray 表中</p>
-<p> id -1 记录 图片</p>
-<p> id - 2 记录 xml 文件</p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722111757014.png" class="lazyload" data-srcset="/activite.assets/image-20220722111757014.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722111757014"></p>
-<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><blockquote>
-<p>在 act_re_deployment 表中</p>
-<p>id - 3 记录 部署单元信息</p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722112101306.png" class="lazyload" data-srcset="/activite.assets/image-20220722112101306.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722112101306"></p>
-<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p><img src="/activite.assets/image-20220722112333390.png" class="lazyload" data-srcset="/activite.assets/image-20220722112333390.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722112333390"></p>
-<blockquote>
-<p>在 act_re_procdef 中</p>
-<p>id &#x3D; 流程id</p>
-<p>name &#x3D; 提交试卷审批</p>
-<p>key &#x3D; sj</p>
-<p>Deployment_ID &#x3D; 单元信息的id (act_re_deployment 的id)</p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722112516622.png" class="lazyload" data-srcset="/activite.assets/image-20220722112516622.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722112516622"></p>
-<h1 id="获取部署单元信息"><a href="#获取部署单元信息" class="headerlink" title="获取部署单元信息"></a>获取部署单元信息</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">get</span><span class="params">(String name)</span>&#123;</span><br><span class="line">	<span class="comment">// name = sj</span></span><br><span class="line">       <span class="comment">//创建processEngine</span></span><br><span class="line">       <span class="type">ProcessEngine</span> <span class="variable">processEngine</span> <span class="operator">=</span> ProcessEngines.getDefaultProcessEngine();</span><br><span class="line">       <span class="comment">//获取RunTimeService</span></span><br><span class="line">       <span class="type">RuntimeService</span> <span class="variable">runtimeService</span> <span class="operator">=</span> processEngine.getRuntimeService();</span><br><span class="line">       <span class="comment">//启动流程，这个 key是当时定义Leave.bpmn时填写的id(即第一张bpmn图片，左侧蓝色框框中，id对应的值，这个是自定义的)</span></span><br><span class="line">       <span class="type">ProcessInstance</span> <span class="variable">processInstance</span> <span class="operator">=</span> runtimeService.startProcessInstanceByKey(name);</span><br><span class="line">       <span class="comment">//输出内容</span></span><br><span class="line"></span><br><span class="line">       System.out.println(<span class="string">&quot;流程定义id：&quot;</span> + processInstance.getProcessDefinitionId());</span><br><span class="line">       System.out.println(<span class="string">&quot;流程实例id：&quot;</span> + processInstance.getId());</span><br><span class="line">       System.out.println(<span class="string">&quot;当前活动id：&quot;</span> + processInstance.getActivityId());</span><br><span class="line">       <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>流程定义id：sj:1:400009<br>流程实例id：400010  (act_ru_execution的id)&#x3D;&#x3D;流程实例就是act_ru_execution&#x3D;&#x3D;<br>当前活动id：_3</p>
-</blockquote>
-<blockquote>
-<p>会从流程实例中找 key  &#x3D; name and  Version &#x3D; Max(Version)</p>
-<p>select *<br>    from ACT_RE_PROCDEF<br>    where KEY_ &#x3D; ? and<br>          (TENANT_ID_ &#x3D; ‘’  or TENANT_ID_ is null) and<br>          VERSION_ &#x3D; (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ &#x3D; ? and (TENANT_ID_ &#x3D; ‘’ or TENANT_ID_ is null))</p>
-<p>到部署表中找 上面 找 已找到的 DEPLOYMENT_ID</p>
-<p>select * from ACT_RE_DEPLOYMENT where ID_ &#x3D; ?</p>
-</blockquote>
-<p>1. </p>
-<blockquote>
-<p>act_ru_execution   的id &#x3D; 流程定义id +1   ACT_ID_ &#x3D; 流程节点的 id </p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722141340437.png" class="lazyload" data-srcset="/activite.assets/image-20220722141340437.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722141340437"></p>
-<p>2. </p>
-<blockquote>
-<p>在 act_hi_actinst 表中 插入 到了第几步,执行了到了User提交用户  ( start -&gt; user )</p>
-</blockquote>
-<p>insert   两条数据  </p>
-<p>act_hi_actinst.id &#x3D; act_ru_execution   的id + 1   act_hi_actinst.EXECUTION_ID_&#x3D; 流程实例id：400010  act_id &#x3D; <em>2 ACT_NAME</em>&#x3D; strteEvent</p>
-<p>act_hi_actinst.id &#x3D; act_ru_execution   的id + 2   act_hi_actinst.EXECUTION_ID_&#x3D; 流程实例id：400010  act_id &#x3D; <em>2    ACT_NAME</em>&#x3D; 提交试卷</p>
-<p><img src="/activite.assets/image-20220722141355031.png" class="lazyload" data-srcset="/activite.assets/image-20220722141355031.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722141355031"></p>
-<p>3. </p>
-<blockquote>
-<p>act_ru_task 的id &#x3D;  act_hi_actinst 中 流程实例最大的 id + 1</p>
-</blockquote>
-<p>记录这个部署单元信息的流程实例 到了哪一步 </p>
-<blockquote>
-<p>name  &#x3D; 提交试卷</p>
-<p>TASK_DEF_KEY_ &#x3D; _3</p>
-<p>PROC_DEF_ID_  &#x3D;  sj:1:400009</p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722141428237.png" class="lazyload" data-srcset="/activite.assets/image-20220722141428237.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722141428237"></p>
-<ol start="4">
-<li>act_ru_identitylink  _ 该谁去执行了</li>
-</ol>
-<blockquote>
-<p>act_ru_identitylink.id &#x3D; 流程实例任务 id +1  User_id&#x3D;”执行人”</p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722141504036.png" class="lazyload" data-srcset="/activite.assets/image-20220722141504036.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722141504036"></p>
-<p>下面两个应该是用来验证 与 记录的</p>
-<p><img src="/activite.assets/image-20220722142028161.png" class="lazyload" data-srcset="/activite.assets/image-20220722142028161.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722142028161"></p>
-<p><img src="/activite.assets/image-20220722142014350.png" class="lazyload" data-srcset="/activite.assets/image-20220722142014350.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722142014350"></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
-<li>在插入的时候 “部署”（部署一样的文件 部署 id 不同 （id不同导致 &#x3D;&#x3D;部署单元信息 的 EEPLOYMENT_ID 不同&#x3D;&#x3D;））</li>
-</ol>
-<p><img src="/activite.assets/image-20220722150536782.png" class="lazyload" data-srcset="/activite.assets/image-20220722150536782.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722150536782"></p>
-<ol start="2">
-<li><p>然后会在  act_ge_bytearray  中存储  Xml 和   图片文件</p>
-</li>
-<li><p>定义流程  （流程文件一样，但 &#x3D;&#x3D;部署单元信息 的 EEPLOYMENT_ID 不同&#x3D;&#x3D;）</p>
-<ul>
-<li>导致ID , DEPLOYMENT_ID 不同<img src="/activite.assets/image-20220722152028949.png" class="lazyload" data-srcset="/activite.assets/image-20220722152028949.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722152028949"></li>
-</ul>
-</li>
-<li><p>act_ru_execution 表 流程定义 ID不同    ACT_ID_ ( 指定到了那一步 ， 记录器ID)</p>
-</li>
-</ol>
-<p><img src="/activite.assets/image-20220722152300631.png" class="lazyload" data-srcset="/activite.assets/image-20220722152300631.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722152300631"></p>
-<ol start="5">
-<li>开始执行 （被指定的）流程时  会由 act_hi_actinst 去开始记录这个（流程）到了哪里 谁去执行（TAsk_ID）</li>
-</ol>
-<p><img src="/activite.assets/image-20220722154205295.png" class="lazyload" data-srcset="/activite.assets/image-20220722154205295.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722154205295"></p>
-<p>ASSIGNEE_   的  值也会带给Task 的 ASSIGNEE_   </p>
-<ol start="6">
-<li>构建任务类</li>
-</ol>
-<p><img src="/activite.assets/image-20220722154554116.png" class="lazyload" data-srcset="/activite.assets/image-20220722154554116.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722154554116"></p>
-<p><img src="/activite.assets/image-20220722154615151.png" class="lazyload" data-srcset="/activite.assets/image-20220722154615151.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722154615151"></p>
-<blockquote>
-<p>所以说可以通过</p>
-</blockquote>
-<p><img src="/activite.assets/image-20220722154748213.png" class="lazyload" data-srcset="/activite.assets/image-20220722154748213.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722154748213"></p>
-<p>看他在哪里</p>
-<ol start="7">
-<li>act_ru_identitylink 插入数据</li>
-</ol>
-<p><img src="/activite.assets/image-20220722154853832.png" class="lazyload" data-srcset="/activite.assets/image-20220722154853832.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722154853832"></p>
-<p>通过PROC_INST_ID_  与 act_ru_execution 的  PROC_INST_ID_ 联合查询  校验  </p>
-<p>act_ru_task 表 是否 对应</p>
-<p><img src="/activite.assets/image-20220722155128449.png" class="lazyload" data-srcset="/activite.assets/image-20220722155128449.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220722155128449"></p>
-<p>ment  构建</p>
-<p>-&gt;act_ge_bytearray    存储文件 xml and img</p>
-<p>-&gt;act_re_procdef   定义流</p>
-<p>-&gt;act_ru_execution  执行</p>
-<p>-&gt;act_hi_actinst      开始执行</p>
-<p>-&gt;act_ru_task         到了哪个任务</p>
-<p>-&gt;act_ru_identitylink   校验</p>
-<p>1-9  </p>
 
   </div>
   
@@ -2654,10 +2586,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-08T16:54:15+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-25T16:20:38+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 8, 2023</p>
+    <p>更新于：May 25, 2023</p>
   </a>
 </div>
 
@@ -2826,7 +2758,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1"><span class="toc-text">1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-text">3</span></a></li></ol>
+      
   </div>
 </section>
 
@@ -3320,7 +3252,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/10/activite/","name":"activiti"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"activiti","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/10/activite/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/10/activite/","wordCount":0,"datePublished":"2023-01-10T01:27:35.000Z","dateModified":"2023-05-08T08:54:15.924Z","keywords":"activiti","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/10/activite/","name":"activiti"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"activiti","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/10/activite/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/10/activite/","wordCount":0,"datePublished":"2023-01-10T01:27:35.000Z","dateModified":"2023-05-25T08:20:38.048Z","keywords":"activiti","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
