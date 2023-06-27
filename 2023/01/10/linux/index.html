@@ -50,7 +50,7 @@ console.log(1111111) // 不推荐
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-01-10T13:58:54.000Z">
-<meta property="article:modified_time" content="2023-05-08T07:19:32.823Z">
+<meta property="article:modified_time" content="2023-06-27T07:47:49.013Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
@@ -2117,7 +2117,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685003298983),
+    lastupdate: new Date(1687852253861),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2517,7 +2517,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="1-基础命"><a href="#1-基础命" class="headerlink" title="1. 基础命"></a>1. 基础命</h1><p>连接</p>
+    <h2 id="1-基础命"><a href="#1-基础命" class="headerlink" title="1. 基础命"></a>1. 基础命</h2><p>连接</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p 22 root@192.168.42.132</span><br></pre></td></tr></table></figure>
 
 
@@ -2534,16 +2534,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-<h1 id="2-vim"><a href="#2-vim" class="headerlink" title="2. vim"></a>2. vim</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">i 进入编辑模式</span><br><span class="line">esc 退出编辑模式</span><br><span class="line">在未编辑模式下  [数字]yy   复制几行     p 粘贴   [数字]dd 删除几行</span><br><span class="line">在未编辑模式下  :wq       保存并退出   :q! 退出不保存</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># JDK</span><br><span class="line">export JAVA_HOME=/usr/env/jdk1.8.0_201/</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
+<h2 id="2-vim"><a href="#2-vim" class="headerlink" title="2. vim"></a>2. vim</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">i 进入编辑模式</span><br><span class="line">esc 退出编辑模式</span><br><span class="line">在未编辑模式下  [数字]yy   复制几行     p 粘贴   [数字]dd 删除几行</span><br><span class="line">在未编辑模式下  :wq       保存并退出   :q! 退出不保存</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># JDK</span><br><span class="line">export JAVA_HOME=/usr/env/jdk1.8.0_201/</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
 
-<h1 id="3-用户"><a href="#3-用户" class="headerlink" title="3.用户"></a>3.用户</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">SU 用户名  切换用户</span><br><span class="line">groups    查看组名</span><br><span class="line">id        查看id</span><br><span class="line">whoami    看看在操作的是哪个账号(多余)</span><br><span class="line"></span><br><span class="line">useradd 选项 用户名</span><br><span class="line">userdel 选项 用户名</span><br><span class="line"></span><br><span class="line">passwd 选项 用户名</span><br><span class="line"></span><br><span class="line">groupadd 选项 用户组</span><br><span class="line">groupdel 用户组</span><br><span class="line">groupmod 选项 用户组</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">@XuJun123</span><br></pre></td></tr></table></figure>
+<h2 id="3-用户"><a href="#3-用户" class="headerlink" title="3.用户"></a>3.用户</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">SU 用户名  切换用户</span><br><span class="line">groups    查看组名</span><br><span class="line">id        查看id</span><br><span class="line">whoami    看看在操作的是哪个账号(多余)</span><br><span class="line"></span><br><span class="line">useradd 选项 用户名</span><br><span class="line">userdel 选项 用户名</span><br><span class="line"></span><br><span class="line">passwd 选项 用户名</span><br><span class="line"></span><br><span class="line">groupadd 选项 用户组</span><br><span class="line">groupdel 用户组</span><br><span class="line">groupmod 选项 用户组</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">@XuJun123</span><br></pre></td></tr></table></figure>
 
-<h1 id="4权限"><a href="#4权限" class="headerlink" title="4权限"></a>4权限</h1><p>r 4 w 2 x可执行 1</p>
+<h2 id="4权限"><a href="#4权限" class="headerlink" title="4权限"></a>4权限</h2><p>r 4 w 2 x可执行 1</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ll 查看权限</span><br><span class="line">chmod 111 文件名  第一个所属用户 2 同组 3其他</span><br></pre></td></tr></table></figure>
 
-<h1 id="5-解压"><a href="#5-解压" class="headerlink" title="5.解压"></a>5.解压</h1><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">z 压缩过的 (.tar.gz) x解压 v视图  f(format)  C(director)</span><br><span class="line">tar -zxvf   文件名 -C 文件名 (指定放入的位置)</span><br><span class="line">tar -xvf   </span><br></pre></td></tr></table></figure>
+<h2 id="5-解压"><a href="#5-解压" class="headerlink" title="5.解压"></a>5.解压</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">z 压缩过的 (.tar.gz) x解压 v视图  f(format)  C(director)</span><br><span class="line">tar -zxvf   文件名 -C 文件名 (指定放入的位置)</span><br><span class="line">tar -xvf   </span><br></pre></td></tr></table></figure>
 
-<h1 id="6断电"><a href="#6断电" class="headerlink" title="6断电"></a>6断电</h1><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">如果在vim 时断电会生成 .文件名.swp隐藏文件</span><br><span class="line">如果再次vim同文件时 会弹出一个选项,必须要 要做出回复或删除命令选项</span><br><span class="line">.swp文件才会删除</span><br><span class="line">export JAVA<span class="built_in">_</span>HOME=/home/xujun/environment/jdk1.8.0<span class="built_in">_</span>201/</span><br><span class="line">export PATH=<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/bin:<span class="built_in">$</span>PATH</span><br><span class="line"></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<h2 id="6断电"><a href="#6断电" class="headerlink" title="6断电"></a>6断电</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">如果在vim 时断电会生成 .文件名.swp隐藏文件</span><br><span class="line">如果再次vim同文件时 会弹出一个选项,必须要 要做出回复或删除命令选项</span><br><span class="line">.swp文件才会删除</span><br><span class="line">export JAVA<span class="built_in">_</span>HOME=/home/xujun/environment/jdk1.8.0<span class="built_in">_</span>201/</span><br><span class="line">export PATH=<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/bin:<span class="built_in">$</span>PATH</span><br><span class="line"></span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 
 
 
@@ -2552,7 +2552,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>mysqld_safe –defaults-file&#x3D;&#x2F;usr&#x2F;local&#x2F;etc&#x2F;my.cnf &amp;</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">显示服务列表</span><br><span class="line">chkconfig --list</span><br><span class="line">添加永久开放的端口（例如：8080端口）</span><br><span class="line">(linux 7 为命令)</span><br><span class="line">firewall-cmd --add-port=8080/tcp --permanent</span><br></pre></td></tr></table></figure>
 
-<h1 id="7环境配置"><a href="#7环境配置" class="headerlink" title="7环境配置"></a>7环境配置</h1><ol>
+<h2 id="7环境配置"><a href="#7环境配置" class="headerlink" title="7环境配置"></a>7环境配置</h2><ol>
 <li><p>安装JDK</p>
 </li>
 <li><p>安装TomCat</p>
@@ -2573,7 +2573,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <ol start="4">
 <li><a href="%E6%97%A0%E9%9C%80%E9%85%8D%E7%BD%AE,%E8%87%AA%E5%B7%B1%E4%BC%9A%E5%8E%BB%E9%85%8D%E7%BD%AE">启动tomcat</a></li>
 </ol>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/*在tomcat的bin目录下*/</span><br><span class="line">./startup.sh   </span><br></pre></td></tr></table></figure>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/*在tomcat的bin目录下*/</span><br><span class="line">./startup.sh</span><br></pre></td></tr></table></figure>
 
 <ol start="5">
 <li><p>本机浏览器成功访问TomCat(不会经过防火墙)</p>
@@ -2581,7 +2581,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>外机访问需开放80   8080  端口</p>
 </li>
 </ol>
-<h1 id="8防火墙"><a href="#8防火墙" class="headerlink" title="8防火墙"></a>8防火墙</h1><blockquote>
+<h2 id="8防火墙"><a href="#8防火墙" class="headerlink" title="8防火墙"></a>8防火墙</h2><blockquote>
 <p>查看所有防火墙设置</p>
 </blockquote>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-ports</span><br></pre></td></tr></table></figure>
@@ -2603,43 +2603,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-<h1 id="9-解释"><a href="#9-解释" class="headerlink" title="9 解释"></a>9 解释</h1><blockquote>
+<h2 id="9-解释"><a href="#9-解释" class="headerlink" title="9 解释"></a>9 解释</h2><blockquote>
 <p> -rw-r–r–. 1 root root 11593900 Aug 14 22:48 apache-tomcat-9.0.65.tar.gz</p>
 </blockquote>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">-rwxr-xr-x  是权限：r读w写x运行，前三个是拥有者权限，中间三个是组权限，后面三个是别人用这个文件时的权限</span><br><span class="line"></span><br><span class="line">1   硬链接数，一般你可以理解成子目录数（对于普通文件，总是1，对于目录来说，为目录下一级子目录的个数+2 (+2是由于 . 和 .. 的原因））</span><br><span class="line"></span><br><span class="line">root 是拥有者</span><br><span class="line">root 是拥有者 所在组</span><br><span class="line"></span><br><span class="line">702160  ：文件大小；</span><br><span class="line">2008-05-12 11:33  ：时间属性（一般情况下是最后修改时间）</span><br><span class="line">bash  ：文件名  （也就是上面的都是 bash 这个文件的属性）</span><br></pre></td></tr></table></figure>
 
-<h1 id="10-运行"><a href="#10-运行" class="headerlink" title="10 运行"></a>10 运行</h1><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">终端  shell</span><br><span class="line">python t2.py <span class="built_in">&amp;</span>    终端台运行   终端关闭，那么程序也会被关闭</span><br><span class="line">nohup /root/test.sh <span class="built_in">&amp;</span>   终端台运行，且再服务器上运行 终端关闭，程序不会关闭</span><br></pre></td></tr></table></figure>
+<h2 id="10-运行"><a href="#10-运行" class="headerlink" title="10 运行"></a>10 运行</h2><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">终端  shell</span><br><span class="line">python t2.py <span class="built_in">&amp;</span>    终端台运行   终端关闭，那么程序也会被关闭</span><br><span class="line">nohup /root/test.sh <span class="built_in">&amp;</span>   终端台运行，且再服务器上运行 终端关闭，程序不会关闭</span><br></pre></td></tr></table></figure>
 
-<h1 id="11-黑与白夜"><a href="#11-黑与白夜" class="headerlink" title="11 黑与白夜"></a>11 黑与白夜</h1><p>shell 启动文件 </p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">所谓shell启动文件（Startup Files）是指Shell启动时 会 自动加载执行 的文件。</span><br><span class="line"></span><br><span class="line">既然这些文件会自动被shell加载执行，通常我们可以在里面放入一些 例行 执行的命令，比如设置一些环境变量。</span><br><span class="line"></span><br><span class="line">bash Shell启动文件有好几个，比如 /etc/profile （所有用户共享）, ~/.bash<span class="built_in">_</span>profile , ~/.bash<span class="built_in">_</span>login , and ~/.profile</span><br></pre></td></tr></table></figure>
+<h2 id="11-定时任务"><a href="#11-定时任务" class="headerlink" title="11 定时任务"></a>11 定时任务</h2><p>[菜鸟教程][<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/linux-crontab-tasks.html]">https://www.runoob.com/w3cnote/linux-crontab-tasks.html]</a></p>
+<p><img src="/2023/01/10/linux/image-20230627143913153.png" class="lazyload" data-srcset="/2023/01/10/linux/image-20230627143913153.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230627143913153"></p>
+<p>文件要为可执行文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x 文件</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo <span class="built_in">$</span>PATH（大写）  环境变量</span><br><span class="line">export PATH=/text:<span class="built_in">$</span>PATH  添加零时环境变量</span><br><span class="line">score ./bash.profile</span><br><span class="line">score /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">crontab -l  # 查看当前用户的脚本</span><br><span class="line"></span><br><span class="line">* * * * * echo &#x27;hello world&#x27; &gt;&gt; /root/2.txt 每分钟执行 echo &#x27;hello world&#x27; &gt;&gt; /root/2.txt 命令</span><br><span class="line"></span><br><span class="line">* * * * * sh /root/1.sh  每分钟执行 sh /root/1.sh 命令 </span><br><span class="line">sh xx.sh 执行 .sh 脚本文件</span><br><span class="line"></span><br><span class="line">crontab -e 编辑保存后会在 /var/spool/cron/用户名文件里 保存对应用户的定时任务语句</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">通常建议把某个用户 独有的 设置环境变量的 命令，放到用户家目录下面的 .bash<span class="built_in">_</span>profile 文件中。</span><br><span class="line"></span><br><span class="line">可以在文件的结尾加入一行</span><br><span class="line"></span><br><span class="line">export PATH=/test:<span class="built_in">$</span>PATH</span><br></pre></td></tr></table></figure>
-
-<h2 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h2><blockquote>
-<p>Linux进程在启动后，通常就会打开3个文件句柄，标准输入文件（stdin），标准输出文件（stdout）和 标准错误文件（stderr）</p>
-</blockquote>
-<p>stdout  符号 &gt;</p>
-<p><code>ps &gt; out</code></p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这个 &gt; 就是 stdout 重定向符号， 它表示 stdout 不是指向 终端设备了，而是 重定向到 out 文件, 输入的信息就到 out 文件了。 终端屏幕上就没有信息了</span><br></pre></td></tr></table></figure>
-
-<p>stderr 符号 2&gt;<code>注意 2 和 &gt; 之间不能有空格</code></p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果我们要，同时重定向stdout和stderr到同一个文件both中，命令写法如下</span><br><span class="line">command <span class="built_in">&amp;</span>&gt; both</span><br></pre></td></tr></table></figure>
-
+<ol start="2">
+<li><p>在约定的目录</p>
+</li>
+<li><p><img src="/2023/01/10/linux/image-20230627142813022.png" class="lazyload" data-srcset="/2023/01/10/linux/image-20230627142813022.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230627142813022"></p>
+</li>
+<li><pre><code class="sh">* * * * * root echo &#39;333333&#39; &gt;&gt; /root/2.txt
+需要标注时间[时间可以省略] 与 用户
+root echo &#39;333333&#39; &gt;&gt; /root/2.txt 也可以执行
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[备份数据库][https://blog.csdn.net/jianqiangdexiaohai/article/details/82972086]</span><br><span class="line"></span><br><span class="line">## 12 黑与白夜</span><br><span class="line"></span><br><span class="line">### shell 启动文件 </span><br><span class="line"></span><br><span class="line">~~~tex</span><br><span class="line">所谓shell启动文件（Startup Files）是指Shell启动时 会 自动加载执行 的文件。</span><br><span class="line"></span><br><span class="line">既然这些文件会自动被shell加载执行，通常我们可以在里面放入一些 例行 执行的命令，比如设置一些环境变量。</span><br><span class="line"></span><br><span class="line">bash Shell启动文件有好几个，比如 /etc/profile （所有用户共享）, ~/.bash_profile , ~/.bash_login , and ~/.profile</span><br><span class="line">~~~</span><br><span class="line"></span><br><span class="line">~~~tex</span><br><span class="line">echo $PATH（大写）  环境变量</span><br><span class="line">export PATH=/text:$PATH  添加零时环境变量</span><br><span class="line">score ./bash.profile</span><br><span class="line">score /etc/profile</span><br><span class="line">~~~</span><br><span class="line"></span><br><span class="line">~~~tex</span><br><span class="line">通常建议把某个用户 独有的 设置环境变量的 命令，放到用户家目录下面的 .bash_profile 文件中。</span><br><span class="line"></span><br><span class="line">可以在文件的结尾加入一行</span><br><span class="line"></span><br><span class="line">export PATH=/test:$PATH</span><br><span class="line">~~~</span><br><span class="line"></span><br><span class="line">### 重定向</span><br><span class="line"></span><br><span class="line">&gt; Linux进程在启动后，通常就会打开3个文件句柄，标准输入文件（stdin），标准输出文件（stdout）和 标准错误文件（stderr）</span><br><span class="line"></span><br><span class="line">stdout  符号 &#x27;&gt;&#x27;</span><br><span class="line"></span><br><span class="line">`ps &gt; out`</span><br><span class="line"></span><br><span class="line">~~~tex</span><br><span class="line">这个 &gt; 就是 stdout 重定向符号， 它表示 stdout 不是指向 终端设备了，而是 重定向到 out 文件, 输入的信息就到 out 文件了。 终端屏幕上就没有信息了</span><br><span class="line">~~~</span><br><span class="line"></span><br><span class="line">stderr 符号 `2&gt;`     `注意 2 和 &gt; 之间不能有空格`</span><br><span class="line"></span><br><span class="line">```tex</span><br><span class="line">如果我们要，同时重定向stdout和stderr到同一个文件both中，命令写法如下</span><br><span class="line">command &amp;&gt; both</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ol>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果我们要，重定向stdout到out文件，并重定向stderr到err文件，命令写法如下</span><br><span class="line">command &gt; out 2&gt;err</span><br></pre></td></tr></table></figure>
 
 <p>stdin 符号 <code>&lt;</code> </p>
 <p><img src="/2023/01/10/linux/image-20230209150309256.png" class="lazyload" data-srcset="/2023/01/10/linux/image-20230209150309256.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230209150309256"></p>
-<h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><p>管道符  <code>|</code></p>
+<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>管道符  <code>|</code></p>
 <p>查看文件中包含err字符串的文件</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep err filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep err filename</span><br></pre></td></tr></table></figure>
+
+<p>从根目录开始查找所有扩展名为 .log 的文本文件，并找出包含 “ERROR” 的行：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ find / -<span class="built_in">type</span> f -name <span class="string">&quot;*.log&quot;</span> | xargs grep <span class="string">&quot;ERROR&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>我们用<code>ps -ef</code> 可以显示出所有的进程信息，但是这里面的内容太多了，我想过滤出其中包含 <code>6536 </code>字符串的行</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep 6536</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2023/01/10/linux/image-20230209145828554.png" class="lazyload" data-srcset="/2023/01/10/linux/image-20230209145828554.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230209145828554"></p>
-<h2 id="拷贝文件到不同服务器"><a href="#拷贝文件到不同服务器" class="headerlink" title="拷贝文件到不同服务器"></a>拷贝文件到不同服务器</h2><p><code>scp</code>[secure copy]</p>
+<h3 id="拷贝文件到不同服务器"><a href="#拷贝文件到不同服务器" class="headerlink" title="拷贝文件到不同服务器"></a>拷贝文件到不同服务器</h3><p><code>scp</code>[secure copy]</p>
 <p>我们已经登录到主机A上面，要将 &#x2F;home&#x2F;byhy1 目录下面的文件abc.txt，拷贝到主机B的&#x2F;home&#x2F;byhy2目录下面，主机B的IP地址为：192.168.1.12</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /home/byhy1/abc.txt byhy2@192.168.1.12:/home/byhy2</span><br></pre></td></tr></table></figure>
 
@@ -2670,10 +2675,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-08T15:19:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-27T15:47:49+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 8, 2023</p>
+    <p>更新于：Jun 27, 2023</p>
   </a>
 </div>
 
@@ -2764,13 +2769,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='next' href='/2023/01/10/activite/'>
           <p class='title'>activiti<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>流程执行1517
-ACT_GE_BYTEARRAY 1518-1519
-
-ACT_RE_PROCDEF定义id kk:1:1520
-
-ACT_HI_PROCINST 1521   流程实例id
-...</p>
+          <p class='content'>变量
+${singCount &gt;&#x3D; 2 } activiti 中 singCount 为用户传递的变量
+${role &#x3D;&#x3D;’leadership’}     ...</p>
         </a>
       
     </div>
@@ -2831,7 +2832,7 @@ ACT_HI_PROCINST 1521   流程实例id
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">重定向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93"><span class="toc-text">管道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E5%88%B0%E4%B8%8D%E5%90%8C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">拷贝文件到不同服务器</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9F%BA%E7%A1%80%E5%91%BD"><span class="toc-text">1. 基础命</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-vim"><span class="toc-text">2. vim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%94%A8%E6%88%B7"><span class="toc-text">3.用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E6%9D%83%E9%99%90"><span class="toc-text">4权限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E8%A7%A3%E5%8E%8B"><span class="toc-text">5.解压</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E6%96%AD%E7%94%B5"><span class="toc-text">6断电</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-text">7环境配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-text">8防火墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%A7%A3%E9%87%8A"><span class="toc-text">9 解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E8%BF%90%E8%A1%8C"><span class="toc-text">10 运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="toc-text">11 定时任务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%A1%E9%81%93"><span class="toc-text">管道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6%E5%88%B0%E4%B8%8D%E5%90%8C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">拷贝文件到不同服务器</span></a></li></ol></li></ol>
   </div>
 </section>
 
@@ -3325,7 +3326,7 @@ ACT_HI_PROCINST 1521   流程实例id
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/10/linux/","name":"Linux"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/10/linux/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/10/linux/","wordCount":0,"datePublished":"2023-01-10T13:58:54.000Z","dateModified":"2023-05-08T07:19:32.823Z","keywords":"Linux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/10/linux/","name":"Linux"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/10/linux/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/10/linux/","wordCount":0,"datePublished":"2023-01-10T13:58:54.000Z","dateModified":"2023-06-27T07:47:49.013Z","keywords":"Linux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

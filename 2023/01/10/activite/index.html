@@ -46,11 +46,11 @@ console.log(1111111) // 不推荐
 <meta property="og:title" content="activiti">
 <meta property="og:url" content="http://example.com/2023/01/10/activite/">
 <meta property="og:site_name" content="Mr.XuBlog">
-<meta property="og:description" content="流程执行1517 ACT_GE_BYTEARRAY 1518-1519  ACT_RE_PROCDEF定义id kk:1:1520  ACT_HI_PROCINST 1521   流程实例id 其中还记录了开始用户的id  ACT_RU_IDENTITYLINK 身份连接 1522  类型为  starter 则记录开始流传的人 participant 则记录该执行的人 ACT_HI_IDENTI">
+<meta property="og:description" content="变量 ${singCount &gt;&#x3D; 2 } activiti 中 singCount 为用户传递的变量 ${role &#x3D;&#x3D;’leadership’}     role是变量   123456private String[] assigneeList;Map&lt;String, Object&gt; processInstVar &#x3D; new HashMap&amp;lt">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-01-10T01:27:35.000Z">
-<meta property="article:modified_time" content="2023-05-25T08:20:38.048Z">
+<meta property="article:modified_time" content="2023-06-07T06:18:46.174Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="activiti">
 <meta name="twitter:card" content="summary">
@@ -2117,7 +2117,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685003298983),
+    lastupdate: new Date(1687852253861),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2517,7 +2517,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="流程执行"><a href="#流程执行" class="headerlink" title="流程执行"></a>流程执行</h1><p><code>1517</code><img src="/2023/01/10/activite/image-20230525103343992.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525103343992.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525103343992"></p>
+    <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote>
+<p>${singCount &gt;&#x3D; 2 } activiti 中 singCount 为用户传递的变量</p>
+<p>${role &#x3D;&#x3D;’leadership’}     role是变量</p>
+</blockquote>
+<p><img src="/2023/01/10/activite/image-20230607140402523.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230607140402523.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230607140402523"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String[] assigneeList;</span><br><span class="line">Map&lt;String, Object&gt; processInstVar = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, Object&gt;();</span><br><span class="line"><span class="comment">//必须是List</span></span><br><span class="line">processInstVar.put(<span class="string">&quot;assigneeList&quot;</span>, Arrays.asList(assigneeList));</span><br><span class="line">processInstVar.put(<span class="string">&quot;signCount&quot;</span>, <span class="number">0</span>);</span><br><span class="line">runtimeService.startProcessInstanceById(processId, processInstVar);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="非变量"><a href="#非变量" class="headerlink" title="非变量"></a>非变量</h2><p>Assignment 作业</p>
+<p><img src="/2023/01/10/activite/image-20230607140440445.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230607140440445.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230607140440445"></p>
+<h2 id="流程执行"><a href="#流程执行" class="headerlink" title="流程执行"></a>流程执行</h2><p><code>1517</code><img src="/2023/01/10/activite/image-20230525103343992.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525103343992.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525103343992"></p>
 <p>ACT_GE_BYTEARRAY <code>1518</code>-<code>1519</code></p>
 <p><img src="/2023/01/10/activite/image-20230525103409524.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525103409524.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525103409524"></p>
 <p>ACT_RE_PROCDEF定义id <code>kk:1:1520</code></p>
@@ -2546,6 +2557,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <p>ACT_RU_TASK <code>1525</code></p>
 <p><img src="/2023/01/10/activite/image-20230525113936961.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525113936961.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525113936961"></p>
+<p><img src="/2023/01/10/activite/image-20230606164257476.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230606164257476.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230606164257476"></p>
 <p>后面执行的流程记录会是 <code>1526</code></p>
 <p><img src="/2023/01/10/activite/image-20230525154818296.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525154818296.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525154818296"></p>
 <p><code>1527</code> 执行记录</p>
@@ -2556,11 +2568,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><code>1529</code> 身份认证 和 记录历史记录 </p>
 <p><img src="/2023/01/10/activite/image-20230525155404743.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155404743.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155404743"></p>
 <p><img src="/2023/01/10/activite/image-20230525155432219.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525155432219.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525155432219"></p>
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>同一个流程部署一次但是开始了不同的流程实例<br>张三开始了一次<br>李四开始了一次</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>同一个流程部署一次但是开始了不同的流程实例<br>张三开始了一次<br>李四开始了一次</p>
 <p><img src="/2023/01/10/activite/image-20230525111623469.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525111623469.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525111623469"></p>
 <p><img src="/2023/01/10/activite/image-20230525111817801.png" class="lazyload" data-srcset="/2023/01/10/activite/image-20230525111817801.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230525111817801"></p>
 <p>如果根据流程定义id查询的话，就会一个流程的所有实例都查询出来</p>
-<h1 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> RuntimeService runtimeService;<span class="comment">// 开启流程</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> TaskService taskService; <span class="comment">// 待审核已审核</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> HistoryService historyService;<span class="comment">// 流转历史</span></span><br></pre></td></tr></table></figure>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> RuntimeService runtimeService;<span class="comment">// 开启流程</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> TaskService taskService; <span class="comment">// 待审核已审核</span></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> HistoryService historyService;<span class="comment">// 流转历史</span></span><br></pre></td></tr></table></figure>
 
 
   </div>
@@ -2586,10 +2598,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-25T16:20:38+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-07T14:18:46+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 25, 2023</p>
+    <p>更新于：Jun 7, 2023</p>
   </a>
 </div>
 
@@ -2758,7 +2770,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-text">变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%8F%98%E9%87%8F"><span class="toc-text">非变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E6%89%A7%E8%A1%8C"><span class="toc-text">流程执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E4%BD%BF%E7%94%A8"><span class="toc-text">具体使用</span></a></li></ol>
   </div>
 </section>
 
@@ -3252,7 +3264,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/10/activite/","name":"activiti"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"activiti","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/10/activite/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/10/activite/","wordCount":0,"datePublished":"2023-01-10T01:27:35.000Z","dateModified":"2023-05-25T08:20:38.048Z","keywords":"activiti","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"log"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Mr.XuBlog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/10/activite/","name":"activiti"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Mr.XuBlog","url":"http://example.com/","keywords":"XuBlog","description":"log","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"log"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"activiti","description":"log","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/10/activite/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Mr.XuBlog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/10/activite/","wordCount":0,"datePublished":"2023-01-10T01:27:35.000Z","dateModified":"2023-06-07T06:18:46.174Z","keywords":"activiti","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
